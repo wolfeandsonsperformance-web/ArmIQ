@@ -1,0 +1,27 @@
+{
+  "expo": {
+    "name": "Jamar Grip App",
+    "slug": "jamar-grip-expo",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "platforms": ["ios","android"],
+    "ios": {
+      "supportsTablet": true,
+      "infoPlist": {
+        "NSBluetoothAlwaysUsageDescription": "This app uses Bluetooth to connect to the Jamar Smart dynamometer.",
+        "NSBluetoothPeripheralUsageDescription": "This app connects to BLE devices.",
+        "NSBluetoothAlwaysAndWhenInUseUsageDescription": "Needed to detect and connect to the Jamar Smart dynamometer."
+      }
+    },
+    "android": {
+      "permissions": [
+        "BLUETOOTH",
+        "BLUETOOTH_ADMIN",
+        "ACCESS_FINE_LOCATION",
+        "ACCESS_COARSE_LOCATION",
+        "BLUETOOTH_SCAN",
+        "BLUETOOTH_CONNECT"
+      ]
+    }
+  }
+}
