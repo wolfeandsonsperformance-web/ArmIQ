@@ -1,27 +1,30 @@
 {
   "expo": {
-    "name": "Jamar Grip App",
-    "slug": "jamar-grip-expo",
+    "name": "ArmIQ",
+    "slug": "armiq",
     "version": "1.0.0",
     "orientation": "portrait",
-    "platforms": ["ios","android"],
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "assetBundlePatterns": ["**/*"],
     "ios": {
       "supportsTablet": true,
-      "infoPlist": {
-        "NSBluetoothAlwaysUsageDescription": "This app uses Bluetooth to connect to the Jamar Smart dynamometer.",
-        "NSBluetoothPeripheralUsageDescription": "This app connects to BLE devices.",
-        "NSBluetoothAlwaysAndWhenInUseUsageDescription": "Needed to detect and connect to the Jamar Smart dynamometer."
-      }
+      "bundleIdentifier": "com.armiqlabs.app"
     },
     "android": {
-      "permissions": [
-        "BLUETOOTH",
-        "BLUETOOTH_ADMIN",
-        "ACCESS_FINE_LOCATION",
-        "ACCESS_COARSE_LOCATION",
-        "BLUETOOTH_SCAN",
-        "BLUETOOTH_CONNECT"
-      ]
+      "package": "com.armiqlabs.app",
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      }
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
     }
   }
 }
