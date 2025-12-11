@@ -13,13 +13,7 @@
     },
     "production": {
       "developmentClient": false,
-      "distribution": "store",
-      "ios": {
-        "buildType": "release"
-      },
-      "android": {
-        "buildType": "app-bundle"
-      }
+      "distribution": "store"
     }
   }
 }
